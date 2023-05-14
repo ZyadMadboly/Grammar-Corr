@@ -2,7 +2,6 @@ import streamlit as st
 import requests
 
 st.title('Grammar Error Correction')
-st.header('Using Attention Mechanism')
 st.markdown('created by: *Yousef karam - Zeiad Madboly*')
 
 inp = st.text_area("Enter Text", '')
