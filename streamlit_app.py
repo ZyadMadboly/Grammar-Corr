@@ -13,11 +13,11 @@ headers = {"Authorization": "Bearer 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"}
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
 	return response.json()
-
 if submit:
   output = query({
     "inputs": inp,
      "options": {
             "max_length": 3000  # Adjust the maximum length as per your requirement
+     }
   })
   st.write(output[0])
