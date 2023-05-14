@@ -16,12 +16,7 @@ def query(payload):
 	return response.json()
 
 if submit:
-    paragraphs = inp.split('\n')
-    outputs = []
-    for paragraph in paragraphs:
-        output = query({
-            "inputs": paragraph,
-        })
-        outputs.append(output[0])
-    corrected_text = '\n'.join(outputs)
-    st.write(corrected_text)
+  output = query({
+    "inputs": inp,
+  })
+  st.write(output[0])
