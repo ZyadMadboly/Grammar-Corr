@@ -15,7 +15,7 @@ def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
 	return response.json()
 
-f submit:
+if submit:
   lines = inp.split('\n')
   corrected_lines = []
   for line in lines:
