@@ -17,5 +17,7 @@ def query(payload):
 if submit:
   output = query({
     "inputs": inp,
+     "options": {
+            "max_length": 3000  # Adjust the maximum length as per your requirement
   })
   st.write(output[0])
