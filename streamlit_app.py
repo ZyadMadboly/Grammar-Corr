@@ -19,4 +19,4 @@ if submit:
   output = query({
     "inputs": inp,
   })
-  st.write(output[0])
+  st.write(output)
