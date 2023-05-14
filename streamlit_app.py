@@ -1,4 +1,4 @@
-import streamlit
+import streamlit as st
 import requests
 
 st.title('Grammar Error Correction')
