@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import happytransformer
 from happytransformer import HappyTextToText
 from happytransformer import TTSettings
 
